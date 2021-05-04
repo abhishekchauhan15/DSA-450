@@ -26,11 +26,37 @@ public:
     }
 
 }
+        return false;    
+       
+    }
+    
+};
+
+
+------------------------------------------------------------------------------------------------------------------
+    //self created solution 
+    class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        int r=matrix.size();
+        int c=matrix[0].size();
+        
+        while(r>0){
+            for(int i=0; i<c; i++){
+            if(matrix[r-1][i]==target)
+               return true;
+          
+        }
+             
+                r--;
+    }
+            
         return false;
         
         
         
-       
     }
+        
+
     
 };
