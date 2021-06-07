@@ -1,5 +1,3 @@
-#include<iostream> 
-using namespace std;
 
 void maxmin(int arr[], int n){
 
@@ -28,19 +26,4 @@ void maxmin(int arr[], int n){
     
 
 
-}
-
-int main(){
-
-int n;
-cout<<"enter the size";
-cin>>n;
-int arr[n];
-for(int i=0; i<n; i++)
-   cin>>arr[i];
-
-maxmin(arr, n);
-
-
-return 0;
 }
