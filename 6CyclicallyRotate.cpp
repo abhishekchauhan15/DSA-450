@@ -14,24 +14,3 @@ void ro(int arr[], int n)
     
 }
 
-int main(){
-    int n;
-   cout<<"enter the size of array";
-   cin>>n;
-   int arr[n];
-   for(int i=0; i<n; i++){
-       cin>>arr[i];
-   }
-   ro(arr,n);
-
-return 0;
-}
-
-
-
-
-
-
-
-
-
