@@ -1,11 +1,17 @@
-#include<iostream> 
-using namespace std;                            
+//#Method 1 (Sorting)
+void sw(int arr[], int n){
+        sort(arr.begin(), arr.end())                            Time Complexity: o(nlogn)
+              for(int i=0; i<n; i++)                                            
+                      cout<<arr[i]
+     }
+        
+
 
 void sw(int arr[], int n){
         int mid=0, low=0;
         int high=n-1;
 
-        while(mid<=high){                       //o(1)
+        while(mid<=high){                                       Time Complexity: O(n)
             if(arr[mid]==0){
                 swap(arr[low], arr[mid]);
                 low++;
@@ -20,24 +26,4 @@ void sw(int arr[], int n){
             }
         }
 
-}
-
-
-
-int main(){
-  int n;
-    cout<<"enter the size";
-    cin>>n;
-
-    int arr[n];
-for(int i=0; i<n; i++)
-cin>>arr[i];
-
-sw(arr, n);
-
-
-for(int i=0; i<n; i++)
-cout<<arr[i]<<" ";
-
-return 0;
 }
