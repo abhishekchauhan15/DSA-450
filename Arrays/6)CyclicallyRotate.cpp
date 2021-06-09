@@ -1,7 +1,7 @@
 void ro(int arr[], int n)
 {
      int temp=arr[n-1];
-   for(int i=n-1; i>=0; i--)                    Time Complexity:o(n)
+   for(int i=n-1; i>=0; i--)                    Time Complexity:o(n2)
       arr[i]=arr[i-1];
       
       arr[0]=temp;
@@ -11,3 +11,16 @@ void ro(int arr[], int n)
       }
     
 }
+
+------------------------------------------------------------------------------------------
+     rotate array by k elements
+     
+     
+     void ro(int arr[], int n, int k)
+{
+    reverse(arr.begin(), arr.begin()+n-k);
+     reverse (arr.begin()+n-k, arr.end());
+     reverse(arr.begin(), arr.end());
+    
+}
+     
