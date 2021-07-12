@@ -13,7 +13,7 @@ void ro(int arr[], int n)
 }
 
 ------------------------------------------------------------------------------------------
-     rotate array by k elements
+     rotate array by k elements by right 
      
      
      void ro(int arr[], int n, int k)
@@ -23,4 +23,12 @@ void ro(int arr[], int n)
      reverse(arr.begin(), arr.end());
     
 }
+
+//for left
+ // reverse(nums.begin(), nums.begin()+k);
+    // reverse(nums.begin()+k, nums.end());
+    // reverse(nums.begin(), nums.end());
+
+    // return nums;
+
      
